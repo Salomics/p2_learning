@@ -1,0 +1,31 @@
+[project]
+name = "hgnc_project"
+version = "0.0.0"
+description = "HGNC Gene Information Web Application"
+authors = [{name = "Saleh Ghali", email = "saleh.ghali@postgrad.manchester.ac.uk"}]
+readme = "README.md"
+requires-python = ">=3.12.3"
+
+# Load dependencies
+dependencies = [
+  "coverage==7.9.2",
+  "iniconfig==2.1.0",
+  "packaging==25.0",
+  "pluggy==1.6.0",
+  "Pygments==2.19.2",
+  "pytest==8.4.1",
+  "pytest-cov==6.2.1",
+]
+
+[build-system]
+
+requires = [
+  "poetry-core==2.5.1", "poetry-dynamic-versioning==1.10.0"
+]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry-dynamic-versioning]
+
+enable = true
+vcs = "git"
+style = "pep440"
