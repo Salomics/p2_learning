@@ -47,6 +47,7 @@ class Download():
         
         return self.dict_output
 
+"""
 hgnc_dataset = Download("https://storage.googleapis.com/public-download-files/hgnc/tsv/tsv/hgnc_complete_set.txt")
 hgnc_dataset.column_position(
     "hgnc_id", "symbol", "name", "prev_symbol",
@@ -57,4 +58,4 @@ testing = hgnc_dataset.selection(
     "previous_names", "aliases", "mane_select", "mane_plus_clinical"
 )
 
-print(testing[0])
+"""
