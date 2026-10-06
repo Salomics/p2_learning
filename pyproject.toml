@@ -4,7 +4,7 @@ version = "0.0.0"
 description = "HGNC Gene Information Web Application"
 authors = [{name = "Saleh Ghali", email = "saleh.ghali@postgrad.manchester.ac.uk"}]
 readme = "README.md"
-requires-python = ">=3.12.3"
+requires-python = "==3.12.3"
 
 # Load dependencies
 dependencies = [
@@ -15,6 +15,7 @@ dependencies = [
   "Pygments==2.19.2",
   "pytest==8.4.1",
   "pytest-cov==6.2.1",
+  "requests==2.34.2",
 ]
 
 [build-system]
