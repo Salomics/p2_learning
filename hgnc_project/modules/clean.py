@@ -30,5 +30,4 @@ def clean(link):
             if val == "":
                 object[key] = "Not available"
 
-    formatted_data = json.dumps(selected_data)
-    return formatted_data
+    return selected_data
