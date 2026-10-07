@@ -1,4 +1,4 @@
-from download import *
+from .download import Download
 
 def clean(link):
     dataset = Download(link)
