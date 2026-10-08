@@ -26,15 +26,17 @@ The project uses a reproducible Conda environment to ensure consistent behaviour
 
 - 1. **Clone the repository**
         git clone https://github.com/Salomics/p2_learning
-- 2. **Create the Conda environment**
-        conda env create -f p2_learning/env.yml
-- 3. **Activate the environment**
+- 2. **change directory to project folder**
+        cd p2_learning
+- 3. **Create the Conda environment**
+        conda env create -f env.yml
+- 4. **Activate the environment**
         conda activate hgnc_conda_dep
-- 4. **Make the virtual environment the local conda**
+- 5. **Make the virtual environment the local conda**
         poetry config virtualenvs.create false --local
-- 5. **Install the project**
-        pip install -e p2_learning **or** pip install p2_learning for final build
-- 6. **Optional globalisation of versioning**
+- 6. **Install the project**
+        pip install -e . **or** pip install . for final build
+- 7. **Optional globalisation of versioning**
         poetry self add "poetry-dynamic-versioning[plugin]"
 
 The editable installation allows changes made to the source code to be immediately reflected without reinstalling the package.
