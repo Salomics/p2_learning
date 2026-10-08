@@ -4,8 +4,8 @@ from django.http import HttpRequest, HttpResponse
 from django.shortcuts import render
 
 import requests
-from .models import search_hgnc
-from .clean import clean
+from hgnc_project.hgnc_app.models import search_hgnc
+from hgnc_project.hgnc_app.clean import clean
 from json import loads
 
 
@@ -51,12 +51,17 @@ def search(request: HttpRequest) -> HttpResponse:
                 }",
                 "output_text_2": f"""Here is more information about this gene:
 
-gene_name: {response_data.get("gene_name")}
-previous_symbols: {response_data.get("previous_symbols")}
-previous_names: {response_data.get("previous_names")}
-aliases: {response_data.get("aliases")}
-mane_select: {response_data.get("mane_select")}
-mane_plus_clinical: {response_data.get("mane_plus_clinical")}
+Gene_name: {response_data.get("gene_name")}
+
+Previous_symbols: {response_data.get("previous_symbols")}
+
+Previous_names: {response_data.get("previous_names")}
+
+Aliases: {response_data.get("aliases")}
+
+Mane_select: {response_data.get("mane_select")}
+
+Mane_plus_clinical: {response_data.get("mane_plus_clinical")}
 """
             },
         )
