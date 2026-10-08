@@ -27,7 +27,7 @@ The project uses a reproducible Conda environment to ensure consistent behaviour
 - 1. **Clone the repository**
         git clone https://github.com/Salomics/p2_learning
 - 2. **Create the Conda environment**
-        conda env create -f hgnc_project/env.yml
+        conda env create -f p2_learning/hgnc_project/env.yml
 - 3. **Activate the environment**
         conda activate hgnc_conda_dep
 - 4. **Make the virtual environment the local conda**
