@@ -33,7 +33,7 @@ The project uses a reproducible Conda environment to ensure consistent behaviour
 - 4. **Make the virtual environment the local conda**
         poetry config virtualenvs.create false --local
 - 5. **Install the project**
-        pip install -e **or** pip install for final build
+        pip install -e . **or** pip install for final build
 - 6. **Optional globalisation of versioning**
         poetry self add "poetry-dynamic-versioning[plugin]"
 
